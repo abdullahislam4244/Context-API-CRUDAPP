@@ -39,7 +39,9 @@ const Provider = ({children}) => {
     return (
 
     <EventContext.Provider value = {Providervalues} >
+
         {children}
+      
     </EventContext.Provider>
     
     )

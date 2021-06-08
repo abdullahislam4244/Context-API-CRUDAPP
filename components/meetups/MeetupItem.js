@@ -19,12 +19,11 @@ function MeetupItem(props) {
     }
 
     const DetailEventHandler = () => {
-      console.log(props.id);
-      console.log(eventProvider);
+     
       const events = [...eventProvider.events].filter(event=> {
         return event.id !== props.id;
       });
-      console.log(events);
+    
       
       eventProvider.updateState(events);
       
